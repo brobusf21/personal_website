@@ -15,6 +15,7 @@
     "angular-bootstrap": "^2.1.4",
     "angular-route": "^1.5.8",
     "bootstrap-social": "^5.0.0",
-    "components-font-awesome": "^4.6.3"
+    "components-font-awesome": "^4.6.3",
+    "bootstrap": "^3.3.7"
   }
 }
