@@ -1,0 +1,32 @@
+{
+  "name": "personal_website",
+  "version": "1.0.0",
+  "description": "personal website for my resume, projects, interests, etc. ",
+  "main": "server.js",
+  "scripts": {
+    "test": "n/a",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n/a.git"
+  },
+  "keywords": [
+    "n/a"
+  ],
+  "author": "brandon robinson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/n/a/issues"
+  },
+  "homepage": "https://github.com/n/a#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0"
+  },
+  "engines": {
+    "node": "6.7.0"
+  }
+}
