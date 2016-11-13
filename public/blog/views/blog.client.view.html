@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>brobinsonone Blog</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -38,6 +38,7 @@
 </head>
 <body>
 
+
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -49,13 +50,13 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="/#!/">Home</a></li>
-        <li><a ng-href="/#!/about">About Me</a></li>
-        <li><a ng-href="/#!/projects">Projects</a></li>
-        <li><a ng-href="/#!/blog">Blog</a></li>
-        <li><a ng-href="/#!/resume">Resume</a></li>
+        <li><a href="/#!/" style="color:white"><b>brobinsonone</b></a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right social-icons">
+        <li class="active"><a ng-href="/#!/blog" style="color:white;"><b>Blog</b></a></li>
+        <li><a ng-href="/#!/projects" style="color:white"><b>Projects</b></a></li>
+        <li><a ng-href="/#!/contact" style="color:white"><b>Contact</b></a></li>
+        <li><a ng-href="/#!/resume" style="color:white"><b>Resume</b></a></li>
         <li><a href="http://github.com/brobusf21" class="btn btn-social-icon btn-github"><span class="fa fa-github"></span></a></li>
         <li><a href="http://bitbucket.org/brobusf21" class="btn btn-social-icon btn-bitbucket"><span class="fa fa-bitbucket"></span></a></li>
         <li><a href="http://twitter.com/BrandonRob21" class="btn btn-social-icon btn-twitter"><span class="fa fa-twitter"></span></a></li>
@@ -68,87 +69,72 @@
 <div class="container-fluid">
   <div class="row content">
     <div class="col-sm-3 sidenav">
-      <h4>Brandon's Blog</h4>
+      <h4>Categories</h4>
       <ul class="nav nav-pills nav-stacked">
         <li class="active"><a href="#section1">All</a></li>
-        <li><a href="#section2">Technology</a></li>
-        <li><a href="#section3">Cycling</a></li>
-        <li><a href="#section3">Logistics</a></li>
+        <li><a href="/#!/blog/technology">Technology</a></li>
+        <li><a href="/#!/blog/cycling">Cycling</a></li>
+        <li><a href="/#!/blog/lifestyle">Lifestyle</a></li>
+        <li><a href="/#!/blog/business">Business</a></li>
+        <li><a href="/#!/blog/product-reviews">Product Reviews</a></li>
       </ul><br>
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search Blog..">
-        <span class="input-group-btn">
-          <button class="btn btn-default" type="button">
-            <span class="glyphicon glyphicon-search"></span>
-          </button>
-        </span>
-      </div>
     </div>
 
     <div class="col-sm-9">
       <h4><small>RECENT POSTS</small></h4>
       <hr>
-      <h2>Cycling is a Habit</h2>
+      <h2>My Bike Build</h2>
       <h5><span class="glyphicon glyphicon-time"></span> Post by Brandon Robinson, Oct 7, 2016.</h5>
-      <h5><span class="label label-danger">Cycling</span> <span class="label label-primary">Motivation</span></h5><br>
-      <p>Food is my passion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <br><br>
+      <h5><span class="label label-danger">Cycling</span> <span class="label label-primary">Lifestyle</span></h5><br>
+      <p>I grew up riding bikes...from the early middle school days till now. It wasnt till this year that I started riding bike consistently again. Back in March, I purchased my first carbon road bike here in San Francisco @ Mikes Bikes and I've been riding it every since. On average, I ride 4 times a week, totally over 60 miles (check out my Strava stats!). The more I ride, the more I feel inclined to make the bike's performace even better...<a href="/#!/blog/cycling/bike-build">Read more</a></p>
+      <br>
       
-      <h4><small>RECENT POSTS</small></h4>
       <hr>
-      <h2>Deploying web applications to Heroku</h2>
-      <h5><span class="glyphicon glyphicon-time"></span> Post by John Doe, Sep 24, 2015.</h5>
-      <h5><span class="label label-success">Lorem</span></h5><br>
-      <p>I always though that creating a website and deploying it using Heroku would be a simple task at hand; boy was I wrong. Lets start off by downloading...</p>
+      <h2>Deploying Web Applications Using Heroku</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by Brandon Robinson, Sep 24, 2016.</h5>
+      <h5><span class="label label-success">Technology</span></h5><br>
+      <p>I always though that creating a website and deploying it using Heroku would be a simple task at hand; boy was I wrong. A couple of years ago, I started building out a website for new car sales in the Bay Area. I grabbed ahold of dealership inventory and started marketing invidivual cars that I thought were cool. It wasnt long that I wanted to make my project public so I tried using Heroku...<a href="/#!/blog/technology/heroku">Read more</a></p>
+      <br>
+
+      <hr>
+      <h2>Why I am Moving to Austin?</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by Brandon Robinson, Sep 24, 2016.</h5>
+      <h5><span class="label label-primary">Lifestyle</span></h5><br>
+      <p>I've lived in San Francisco for over 6 years now and with little time, I have seen rapid growth and change. To be more specific, San Francisco's skyline doesn't even look the same to me: more high rise condos, the Salesforce tower, etc. Nevertheless, I am going to miss this place. <a href="/#!/blog/lifestyle/moving-to-austin">Read more</a></p>
+      <br>
+
+      <hr>
+      <h2>SRAM E-Tap Road Kit</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by Brandon Robinson, Sep 24, 2016.</h5>
+      <h5><span class="label label-danger">Cycling</span> <span class="label label-danger">Product Review</span></h5><br>
+      <p>I've lived in San Francisco for over 6 years now and with little time, I have seen rapid growth and change. To be more specific, San Francisco's skyline doesn't even look the same to me: more high rise condos, the Salesforce tower, etc. Nevertheless, I am going to miss this place. <a href="/#!/blog/lifestyle/moving-to-austin">Read more</a></p>
       <hr>
 
       <h4>Leave a Comment:</h4>
-      <form role="form">
-        <div class="form-group">
-          <textarea class="form-control" rows="3" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-success">Submit</button>
-      </form>
-      <br><br>
-      
-      <p><span class="badge">2</span> Comments:</p><br>
-      
-      <div class="row">
-        <div class="col-sm-2 text-center">
-          <img src="bandmember.jpg" class="img-circle" height="65" width="65" alt="Avatar">
-        </div>
-        <div class="col-sm-10">
-          <h4>Anja <small>Sep 29, 2015, 9:12 PM</small></h4>
-          <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <br>
-        </div>
-        <div class="col-sm-2 text-center">
-          <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
-        </div>
-        <div class="col-sm-10">
-          <h4>John Row <small>Sep 25, 2015, 8:25 PM</small></h4>
-          <p>I am so happy for you man! Finally. I am looking forward to read about your trendy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <br>
-          <p><span class="badge">1</span> Comment:</p><br>
-          <div class="row">
-            <div class="col-sm-2 text-center">
-              <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
-            </div>
-            <div class="col-xs-10">
-              <h4>Nested Bro <small>Sep 25, 2015, 8:28 PM</small></h4>
-              <p>Me too! WOW!</p>
-              <br>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div id="disqus_thread"></div>
+      <script>
+
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = '//brobinson-io.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+      </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        
     </div>
   </div>
 </div>
-
-<footer class="container-fluid">
-  <p>Footer Text</p>
-</footer>
 
 </body>
 </html>

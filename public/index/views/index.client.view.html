@@ -12,20 +12,32 @@
       border-radius: 0;
     }
 
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+/*    .row.content {height: 1500px}*/
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+/*      height: 100%;*/
+    }
+
     .social-icons {
     	padding: 5px;
     }
     
     /* Add a gray background color and some padding to the footer */
     footer {
-      background-color: #f2f2f2;
       padding: 25px;
+    }
+
+    #blog {
+/*      background-color: #f2f2f2;*/
     }
   </style>
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -36,100 +48,151 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="/#!/">Home</a></li>
-        <li><a ng-href="/#!/about">About Me</a></li>
-        <li><a ng-href="/#!/projects">Projects</a></li>
-        <li><a ng-href="/#!/blog">Blog</a></li>
-        <li><a ng-href="/#!/resume">Resume</a></li>
+        <li class="active"><a href="/#!/" style="color:black"><b>brobinsonone</b></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a ng-href="/#!/blog" style="color:black"><b>Blog</b></a></li>
+        <li><a ng-href="/#!/projects" style="color:black"><b>Projects</b></a></li>
+        <li><a ng-href="/#!/contact" style="color:black"><b>Contact</b></a></li>
+        <li><a ng-href="/#!/resume" style="color:black"><b>Resume</b></a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 
-<div class="jumbotron">
-	<div class="container text-center">
-  		<div class="row">
-  			<div class="col-sm-3">
-      			<img src="/img/me.jpg" class="img-responsive img-thumbnail" style="width:100%" alt="Image">
+<div class="container">
+  <div class="row content">
+    <div class="col-sm-5 container text-center sidenav">
+    		<div class="row" style="padding-top: 15px;">
+            <img src="/img/me.jpg" class="img-responsive img-thumbnail" style="max-width:25%; height: auto;" alt="Image">
+        </div>
+      	<div class="row">
+      			<h1>Brandon Robinson</h1>
+        </div>
+        <div class="row">
+    <!-- 	    	<div class="col-sm-1 social-icons"> -->
+    	 			<a href="http://github.com/brobusf21" target="_blank" class="btn btn-social-icon btn-github"><span class="fa fa-github"></span></a>
+    <!-- 	    	</div> -->
+    <!-- 	    	<div class="col-sm-1 social-icons"> -->
+    	    		<a href="http://bitbucket.org/brobusf21" target="_blank" class="btn btn-social-icon btn-bitbucket"><span class="fa fa-bitbucket"></span></a>
+    <!-- 	    	</div> -->
+    <!-- 	    	<div class="col-sm-1 social-icons"> -->
+    	    		<a href="http://twitter.com/BrandonRob21" target="_blank" class="btn btn-social-icon btn-twitter"><span class="fa fa-twitter"></span></a>
+    <!-- 	    	</div> -->
+    <!-- 	    	<div class="col-sm-1 social-icons"> -->
+    	    		<a href="http://linkedin.com/in/brobusf21" target="_blank" class="btn btn-social-icon btn-linkedin"><span class="fa fa-linkedin"></span></a>
+    <!-- 	    	</div> -->
     		</div>
-    		<div class="col-sm-9">
-    			<h1>Brandon Robinson</h1>
-    			<p>Computer science student <a href="http://twitter.com/usfca"><i>@UniversityofSanFrancisco</i></a></p>
-    			<div class="container text-center">
-   	    			<div class="col-sm-4">
-    				</div>
-			    	<div class="col-sm-1 social-icons">
-			 			<a href="http://github.com/brobusf21" class="btn btn-social-icon btn-github"><span class="fa fa-github"></span></a>
-			    	</div>
-			    	<div class="col-sm-1 social-icons">
-			    		<a href="http://bitbucket.org/brobusf21" class="btn btn-social-icon btn-bitbucket"><span class="fa fa-bitbucket"></span></a>
-			    	</div>
-			    	<div class="col-sm-1 social-icons">
-			    		<a href="http://twitter.com/BrandonRob21" class="btn btn-social-icon btn-twitter"><span class="fa fa-twitter"></span></a>
-			    	</div>
-			    	<div class="col-sm-1 social-icons">
-			    		<a href="http://linkedin.com/in/brobusf21" class="btn btn-social-icon btn-linkedin"><span class="fa fa-linkedin"></span></a>
-			    	</div>
-			    	<div class="col-sm-4">
-			    	</div>
-    			</div>
-    			<p>I'm a student, programmer, technologist, car enthusiast, etc. Feel free to check out the About Me section to read in more detail about my interests, goals, passions, and future endeavors.</p>
-    		</div>
-  		</div>
- 	</div>
-</div>
+        <hr>
+        <div class="row" style="font-family: Arial, Helvetica, sans-serif;">
+      			<h5>Hello! Thanks for stopping by! Let me start off by introducing myself a little bit:</h5>
+            <h5> Currently, I am a senior CS student at <a href="http://twitter.com/usfca"><i>@UniversityofSanFrancisco</i></a> and I will be graduating this December, 2016. It would be impossible for me to share with you everything about myself on one website so please check out my blog section to learn more about me.</h5> 
+            <h5>There you can read in more detail about my interests, goals, passions, and future endeavors. If you have any questions or you're interested in my resume, you can click on those links in the footer!</h5>
+      	</div>
+    </div>
 
-  
-<div class="container-fluid bg-3 text-center">
-  <h3>Featured Posts</h3><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <a href="/#!/blog/unixshell">
-      	<h4>Building Mini Unix Shell</h4>
-      	<img src="/img/shell_pic.jpg" class="img-responsive" style="width:100%" alt="Image">
-      </a>
-    </div>
-    <div class="col-sm-4">
-    	<a href="/#!/blog/herokudeploy">
-      		<h4>Deploying App Using Heroku</h4>
-      		<img src="/img/heroku2.jpg" class="img-responsive" style="width:100%" alt="Image">
-      	</a>
-    </div>
-    <div class="col-sm-4">
-    	<a href="/#!/blog/grep">
-      		<h4>Custom Grep Commands</h4>
-      		<img src="/img/linux.jpg" class="img-responsive" style="width:100%" alt="Image">
-      	<a href="/#!/blog">
-    </div>
-  </div>
-</div><br>
+    <div class="col-sm-7" >  
+      <div class="container-fluid bg-3 text-center" id="blog">
+        <h3>Featured Tech Posts</h3><br>
+        <div class="row">
+            <a href="/#!/blog/technology/unixshell">
+            	<h4>Building Mini Unix Shell</h4>
+    <!--         	<img src="/img/shell_pic.jpg" class="img-responsive" style="width:100%" alt="Image"> -->
+            </a>
+            <h5> My most recent project was to build a mini Unix shell written in C for my Rasberry Pi.</h5> 
+        </div>
+        <div class="row">
+          	<a href="/#!/blog/technology/heroku">
+            		<h4>Deploying App Using Heroku</h4>
+    <!--         		<img src="/img/heroku2.jpg" class="img-responsive" style="width:100%" alt="Image"> -->
+            	</a>
+              <h5>Building a website and hosting it yourself is not always easy as it seems.</h5>
+        </div>
+        <div class="row">
+          	<a href="/#!/blog/technology/grep">
+            		<h4>Custom Grep Commands</h4>
+    <!--         		<img src="/img/linux.jpg" class="img-responsive" style="width:100%" alt="Image"> -->
+            </a>
+            <h5>The Unix command 'grep' is great, but how can we make it better?</h5>
+        </div>
+        <div class="row">
+          	<a href="/#!/blog/technology/mlab">
+            		<h4>MLab and It's Advantages</h4>
+    <!--         		<img src="/img/mlab.jpg" class="img-responsive" style="width:100%" alt="Image"> -->
+            </a>
+            <h5>Using Mlab to host an instance of a MongoDB database for your website.</h5>
+        </div>
+        <div class="row">
+          	<a href="/#!/blog/business/logistics-business">
+            		<h4>Starting a Logistics Business</h4>
+    <!--         		<img src="/img/3pl.jpg" class="img-responsive" style="width:100%" alt="Image"> -->
+            </a>
+            <h5>My goal to create a highly efficient logistics company one day and why.</h5>
+        </div>
+        <div class="row">
+          	<a href="/#!/blog/lifestyle/moving-to-austin">
+            		<h4>Why I'm moving to Austin, TX</h4>
+    <!--         		<img src="/img/austin_tx.jpg" class="img-responsive" style="width:100%" alt="Image"> -->
+            </a>
+            <h5>San Francisco is great, buttt I'm ready for a change! Hello Austin!</h5>
+        </div>
+        
+        <br>
 
-<div class="container-fluid bg-3 text-center">
-  <div class="row">
-    <div class="col-sm-4">
-    	<a href="/#!/blog">
-      		<h4>MLab and It's Advantages</h4>
-      		<img src="/img/mlab.jpg" class="img-responsive" style="width:100%" alt="Image">
-        </a>
+        <hr>
+        <h3>Featured Product Review Posts</h3><br>
+        <div class="row">
+            <a href="/#!/blog/technology/unixshell">
+              <h4>SRAM E-Tap Road Kit</h4>
+    <!--          <img src="/img/shell_pic.jpg" class="img-responsive" style="width:100%" alt="Image"> -->
+            </a>
+            <h5>Looking for a wireless shifting kit for your roadbike? The E-Tap system is incredible.</h5> 
+        </div>
+        <div class="row">
+            <a href="/#!/blog/technology/heroku">
+                <h4>Specialized S-Works Road 6 Cycling Shoes</h4>
+    <!--            <img src="/img/heroku2.jpg" class="img-responsive" style="width:100%" alt="Image"> -->
+              </a>
+              <h5>Buying the right cycling shoe is key for any habitual rider. 5 stars.</h5>
+        </div>
+        <div class="row">
+            <a href="/#!/blog/technology/grep">
+                <h4>Late 2016 iMac 27 5k</h4>
+    <!--            <img src="/img/linux.jpg" class="img-responsive" style="width:100%" alt="Image"> -->
+            </a>
+            <h5>I've used my iMac for over a year and it still impresses me everyday.</h5>
+        </div>
+        <div class="row">
+            <a href="/#!/blog/technology/mlab">
+                <h4>ENVE 4.5 SES Carbon Ceramic Wheels & Hubs</h4>
+    <!--            <img src="/img/mlab.jpg" class="img-responsive" style="width:100%" alt="Image"> -->
+            </a>
+            <h5>If you're in the market for high end carbon wheels, these are the ones!</h5>
+        </div>
+        <div class="row">
+            <a href="/#!/blog/business/logistics-business">
+                <h4>iPhone 7</h4>
+    <!--            <img src="/img/3pl.jpg" class="img-responsive" style="width:100%" alt="Image"> -->
+            </a>
+            <h5>For those of you thinking of switching or upgrading...read this.</h5>
+        </div>
+        <div class="row">
+            <a href="/#!/blog/lifestyle/moving-to-austin">
+                <h4>2016 Specialized Tarmac Expert</h4>
+    <!--            <img src="/img/austin_tx.jpg" class="img-responsive" style="width:100%" alt="Image"> -->
+            </a>
+            <h5>Obviously I like cycling but this was my first carbon bike so I have to...</h5>
+        </div>
+      </div>
     </div>
-    <div class="col-sm-4">
-    	<a href="/#!/blog/logistics-business">
-      		<h4>Starting a Logistics Business</h4>
-      		<img src="/img/3pl.jpg" class="img-responsive" style="width:100%" alt="Image">
-      	</a>
-    </div>
-    <div class="col-sm-4">
-    	<a href="/#!/blog/moving-to-austin">
-      		<h4>Why I'm moving to Austin, TX</h4>
-      		<img src="/img/austin_tx.jpg" class="img-responsive" style="width:100%" alt="Image">
-      	</a>
-    </div>
-  </div>
-</div><br><br>
 
 <footer class="container-fluid text-center">
-  <p>Brandon Robinson</p>
+  <div class="row">
+      <div class="col-sm-12">
+        <a href="/#!/contact">Contact me via email</a>
+        <p>Brandon Robinson 2016</p>
+      </div>
 </footer>
 
 </body>
